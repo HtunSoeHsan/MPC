@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="assets/CSS/style.css" rel="stylesheet"> -->
+  <link href="assets/CSS/index.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>HSH-Room-Chat</title>
+</head>
+
+<body>
+  <div id="particles-js">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><b>Private Chat</b></a>
+      <marquee
+           behavior="scroll"
+           width="555"
+           height="20" 
+           direction="lef">
+           Welcome To My Chat
+          </marquee>
+      <div id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="home-container">
+    <header class="home-header">
+      <h1>Login To Chat</h1>
+    </header>
+    <main class="home-main">
+      <form class="login">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <br>
+          <input id="username" type="text" placeholder="Username">
+        </div>
+        <div class="form-group mt-3">
+          <label for="password">Password:</label>
+          <br>
+          <input id="password" type="password" placeholder="Password">
+        </div>
+      </form>
+      <button onClick="login()" type="submit" class="btn btn-info">Login</button>
+    </main>
+    <div id='errorBox' class="alert alert-danger d-none">Sorry! Your login was invalid!</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="assets/JavaScript/index.js"></script>
+  <script src="assets/JavaScript/particles.js"></script>
+  <script src="assets/JavaScript/app.js"></script>
+
+</body>
+
+</html>

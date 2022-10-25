@@ -1,0 +1,7 @@
+node_modules/
+.eslintrc.json
+.eslintignore
+package-lock.json
+.env
+.DS_Store
+.vscode
