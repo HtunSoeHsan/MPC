@@ -19,6 +19,7 @@ const login_info = {
         const column = 'user_name';
         const exists = `(user_name = '${newUsername}')`;
         const result = await orm.findOne(this.name, column, exists);
+        console.log("result", result);
         return result[0];
     },
 

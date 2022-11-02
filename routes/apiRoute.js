@@ -42,7 +42,6 @@ function routes(app, onlineUsers) {
         const avatar = req.body.avatar;
         console.log(`POST REQUEST: Adding [NEW USER]: username ${username}, firstname: ${firstname}, lastname: ${lastname}, password: ${password}, avatar: ${avatar}`);
         await login.addNew(username, password);
-        
         const loginID = await login.matchWithUser(username); // find id # of table login_id
         console.log('loginid', loginID);
         await user.addNew(loginID.id, firstname, lastname, username, avatar)

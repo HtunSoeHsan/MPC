@@ -1,21 +1,6 @@
-const mysql = require('mysql');
+require('dotenv').config();
+const db = require('./connection')('flux_db', process.env.SQL_PASSWORD);
 
-var db = mysql.createConnection({
-    database : 'sql10528054',
-    host     : 'sql10.freemysqlhosting.net',
-    user     : 'sql10528054',
-    password : 'vSriFRHPZw'
-  });
-  
-  db.connect(function(err) {
-    if (err) {
-      console.error('error connecting: ' + err.stack);
-      return;
-    }
-  
-    console.log('connected as id ' + db.threadId);
-  });
-// 
 const orm = {
     async selectAll(tableName) {
         const query = `SELECT * FROM ${tableName}`;

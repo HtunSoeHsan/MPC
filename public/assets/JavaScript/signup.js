@@ -95,7 +95,9 @@ async function showAvatars() {
     const checkUser = await fetchJSON ('/api/avatars'); //picture array fetching
     console.log(checkUser);
     checkUser.forEach(image => {
+        console.log("image", image);
         let imageName = image.replace('.png','');
+        console.log("imagename:", imageName);
         document.querySelector('#modal-body').innerHTML += 
         `<div class="col-3">
             <img class="img-responsive avatar" style="margin:0 auto;" src="./assets/avatars/${image}" 
